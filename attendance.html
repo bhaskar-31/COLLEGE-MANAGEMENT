@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadAttendance()">
+
+<h2>Attendance Management</h2>
+
+<form onsubmit="markAttendance(event)">
+    <input type="text" id="attName" placeholder="Student Name"><br><br>
+    
+    <input type="date" id="attDate"><br><br>
+
+    <select id="attStatus">
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+    </select><br><br>
+
+    <button type="submit">Mark Attendance</button>
+</form>
+
+<h3>Attendance Records</h3>
+
+<table border="1" id="attendanceTable">
+    <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Status</th>
+    </tr>
+</table>
+
+<br><a href="dashboard.html">Back</a>
+
+<script src="script.js"></script>
+</body>
+</html>
